@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    User.delete(params[:id])
   end
 
   private

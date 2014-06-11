@@ -21,6 +21,12 @@ body {
   text-align: center;
   font-family: Verdana;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+}
 li {
   list-style: none;
   font-size: 180%;

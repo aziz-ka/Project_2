@@ -1,7 +1,9 @@
 <h1>Welcome to TAJ</h1>
 
+<h3><a href="/users/new">Sign Up</a></h3>
+
 <% @users.each do |user| %>
 <ul>
-  <li><%= user.username %></li>
+  <li><a href="/users/<%= user.id %>"><%= user.username %></a></li>
 </ul>
 <% end %>

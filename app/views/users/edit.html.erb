@@ -1,11 +1,4 @@
 Edit
 
-<form action="/users/<%=@user.id%>" method="post">
-  <%= token_tag %>
-  <input type="hidden" name="_method" value="put">
-  <input type="text" name="user[username]" value="<%=@user.username%>">
-  <input type="text" name="user[password]"value="<%=@user.password%>">
-  <button type="submit">Submit</button>
-
-</form>
+<%= render 'form' %>
 

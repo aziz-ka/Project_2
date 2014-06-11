@@ -1,1 +1,13 @@
-Show
+Show <%= @user.username %>
+
+To edit, click <a href="/users/<%=@user.id%>/edit">here</a>.
+
+To delete, click
+
+<form action="/users/<%=@user.id%>" method="post">
+  <%= token_tag %>
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit">Delete</button>
+
+</form>
+

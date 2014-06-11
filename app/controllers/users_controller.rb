@@ -18,11 +18,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.update(user_params)
+    user = User.update(user_params)
+    redirect_to user_path(user)
   end
 
   def destroy
     User.delete(params[:id])
+    redirect_to users_path
   end
 
   private
